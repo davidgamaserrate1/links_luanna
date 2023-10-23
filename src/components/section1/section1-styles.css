@@ -1,0 +1,76 @@
+
+.section1_container {
+     background-color: #0B0E12;
+     height: 100vh;
+     position: relative;
+  }
+
+  .section1_container_brush{     
+    
+ z-index: -1;
+    position: fixed;
+
+  }
+
+  .section1_container__header{ 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+
+  .section1_container__header_img{
+    width:100px ;
+    margin-top: 50px;
+  }
+ 
+  .section1_container__profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+    height: 350px;
+    margin: -40px auto;
+  }
+
+  .section1_container__profile_picture{
+    width: 100%;
+    margin: -10px auto;
+    width: 230px;
+  }
+
+  .section1_container_aboutme{     
+    width: 300px;
+    
+    margin:  -120px auto;
+ 
+  }
+  
+  .section1_container_aboutme__pic{
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  @media (min-width:560px) {
+   
+    .section1_container__profile_picture{
+        width: 400px;
+    }
+
+    .section1_container_aboutme{     
+        width: 500px;
+        margin:  0 auto;
+ 
+    }
+
+    .section1_container__header{ 
+        height: 150px;
+    }
+
+    .section1_container_aboutme__pic{
+        width: 400px;
+    }
+  }
