@@ -1,22 +1,4 @@
 /* carrousel-styles.css */
-
-
-.carrousel{
-  
- 
-}
-
-.carrousel_item{
-  width: 200px;
-  margin: auto auto;
-}
-
-.carrousel_itens{
- 
-}
-
-.carrousel_item1{
-  width: 500px;
-  display: flex;
-  flex-wrap: wrap;
+.slider{
+  color: #fff;
 }

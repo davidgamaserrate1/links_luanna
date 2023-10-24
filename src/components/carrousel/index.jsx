@@ -1,46 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay,Pagination,Navigation } from 'swiper/modules';
 
-import './carrousel-styles.css'
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import 'swiper/css/effect-fade';
 
-import Carousel from 'react-bootstrap/Carousel';
-
-import img1 from '../../assets/projects/projeto1.png'
-import img2 from '../../assets/projects/projeto2.png'
-import img3 from '../../assets/projects/projeto3.png'
-
-const Carousel2 = () => {
-  return (
-    
-    <Carousel prevLabel={null} prevIcon={null} nextIcon={null}  nextLabel ={null} className='carrousel'>
-     
-
-     <Carousel.Item  >
-         
-          <img src={img1} alt="" />
-          <img src={img2} alt="" />        
-          <img src={img3} alt="" />        
-        
-      </Carousel.Item>
-      <Carousel.Item>
-        <div className="carrousel_item">
-          <img   className="carrousel_item1" src={img1} alt="" />
-          <img className="carrousel_item1"  src={img2} alt="" />        
-          <img className="carrousel_item1"  src={img3} alt="" />        
-        </div>
-      </Carousel.Item>
-      <Carousel.Item>
-        <div className="carrousel_item">
-          <img src={img1} alt="" />
-          <img src={img2} alt="" />        
-          <img src={img3} alt="" />        
-        </div>
-      </Carousel.Item>
-      
-  
-     
-       
-    </Carousel>
+import './carrousel-styles.css' 
  
+const Carousel2 = ({images}) => {
+  return (
+    <Swiper
+      slidesPerView={3}
+      spaceBetween={30}
+      centeredSlides={true}
+      loop={true}
+      navigation={true}
+      modules={[Autoplay, Pagination, Navigation]}
+      className="slider"
+      autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+          dot:true
+      }}      
+    >
+      {images.map((image, index)=>(
+        <SwiperSlide key={index} >
+          <img src={image}  className="img" alt='Banner do projeto' />          
+        </SwiperSlide>    
+        ))
+      }
+  </Swiper>
   );
 };
 

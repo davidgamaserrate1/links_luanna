@@ -66,6 +66,10 @@
   }
  
 
+  .section1_container_projects__carrousel{
+    margin:  auto auto;
+    padding: 50px;
+  }
   @media (min-width:560px) {
    
     .section1_container__profile_picture{
