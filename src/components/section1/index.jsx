@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "../carrousel";
 import {  SlideFade } from "@chakra-ui/react";
+import esc from '../../assets/ESCRITAESPAÇADA.png'
 
 import './section1-styles.css'
 
@@ -36,9 +37,13 @@ const images = [
     projeto12
 ]
  
+
+
 export default function Section1() {
     return(
-        <SlideFade in offsetY='50vh' className="section1_container" >            
+        <>
+        <SlideFade in offsetY='50vh' className="section1_container" >    
+            <img className="escrita" src={esc} alt="escrita" />        
             <div className="section1_container__header"> 
                 <img className="section1_container__header_img" src={logo} alt="logo" />
             </div>
@@ -55,6 +60,14 @@ export default function Section1() {
                 <Carousel lassName="section1_container_projects__carrousel" images={images}/>
             </div>
         </SlideFade>
+        
+        <div className="section2_container">
+            <div className="section2_container_links">
+                <img className="section2_container_links__image" src="" alt="" />
+            </div>
+        </div>
+
+        </>
     )
 }
 

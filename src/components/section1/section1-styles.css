@@ -1,9 +1,21 @@
+.escrita{
+  position: absolute;
+  height: 100%;
+  
+  margin-left: -50px;
+  margin-top: 10px;
+  
+}
 
 .section1_container {
     background-color: #0B0E12;
     min-height: 100vh;
     position: relative;
     transition: ease-in-out 2ms;
+    background-image: url('../../assets/FUNDO1.png');
+    background-size: cover;
+    padding: 0 50px 50px 50px;
+    
   }
 
  
@@ -76,6 +88,13 @@
    margin: 0 auto;
   }
   @media (min-width:560px) {
+    section1_container {
+     
+    
+      background-size: cover;
+    
+    }
+  
     .section1_container__profile{
        
       height: 350px;
