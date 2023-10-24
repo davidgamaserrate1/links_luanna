@@ -43,16 +43,16 @@ export default function Section1() {
                 <img className="section1_container__header_img" src={logo} alt="logo" />
             </div>
             <div className="section1_container__profile"> 
-                <img className="section1_container__profile_picture" src={profile} alt="logo" />    
+                <img className="section1_container__profile_picture" src={profile} alt="minha foto" />    
             </div>
             <div className="section1_container_aboutme">
                 <img className="section1_container_aboutme__pic" src={aboutme} alt="descrição sobre mim" />
             </div>
             <div className="section1_container_projects">
                 <img className="section1_container_projects__pic" src={projects_txt} alt="alguns projetos" />
-                <Carousel lassName="section1_container_projects__carrousel" images={images}/>
             </div>
-            <div className="section1_container_projects">
+            <div className="section1_container_carrousel">
+                <Carousel lassName="section1_container_projects__carrousel" images={images}/>
             </div>
         </SlideFade>
     )

@@ -11,27 +11,28 @@ import './carrousel-styles.css'
  
 const Carousel2 = ({images}) => {
   return (
-    <Swiper
-      slidesPerView={3}
-      spaceBetween={30}
-      centeredSlides={true}
-      loop={true}
-      navigation={true}
-      modules={[Autoplay, Pagination, Navigation]}
-      className="slider"
-      autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-          dot:true
-      }}      
-    >
-      {images.map((image, index)=>(
-        <SwiperSlide key={index} >
-          <img src={image}  className="img" alt='Banner do projeto' />          
-        </SwiperSlide>    
-        ))
-      }
-  </Swiper>
+    <div className="slider">
+      <Swiper 
+        slidesPerView={3}
+        spaceBetween={8}
+        centeredSlides={true}
+        loop={true}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        style={{color:'#fff',}}
+        autoplay={{
+            delay: 2000,
+            disableOnInteraction: false 
+        }}      
+      >
+        {images.map((image, index)=>(
+          <SwiperSlide key={index} >
+            <img src={image}  className="img" alt='Banner do projeto' />          
+          </SwiperSlide>    
+          ))
+        }
+      </Swiper>
+    </div>
   );
 };
 
