@@ -7,11 +7,10 @@ import Section2 from "./components/section2";
  
 function App() {
   return (
-    <div style={{height:'100%', width:'100%'}}>
+    <div  className="app">
       <Section1 />
       <BorderDivider />
       <Section2 />
-      <Footer />
     </div>
   );
 }

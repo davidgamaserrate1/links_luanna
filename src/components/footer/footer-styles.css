@@ -1,11 +1,14 @@
 .footer{
-    margin-top: 16px;
+   
     background-color: #0B0E12;
     width: 100%;
-    padding: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    z-index: 9999999;
+    bottom: 0;
+    left: 0;
 }
 
 .footer_logo{

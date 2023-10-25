@@ -1,10 +1,19 @@
+
+
 .section2_container{
+    position: relative;
     height: calc(100vh - 150px);
     background-color: white;
     position: relative;
     transition: ease-in-out 2ms;    
     width: 100%;
-     
+ 
+    background-color: #fafafa;
+ 
+    background-image:  radial-gradient(#ff2ea6 2px, transparent 2px), radial-gradient(#ff2ea6 2px, #fafafa 2px);
+    background-size: 80px 80px;
+    background-position: 0 0,40px 40px;
+    z-index: 99999;
 }
 
 .section2_container_links_images{
@@ -24,7 +33,7 @@
 .section_feedbacks{
    
    
-   margin: 50px auto;
+   margin: 50px auto 0;
 }
 
 .section2_container_feedbacks{

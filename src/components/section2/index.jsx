@@ -13,6 +13,7 @@ import print3 from '../../assets/section2/PRINT3.png'
 import print4 from '../../assets/section2/PRINT4.png'
 import BorderDivider from "../cardLink/borderDivider";
 import Carousel from "../carrousel/index.jsx";
+import Footer from "../footer";
 
 const linksBtn = [
     {description: 'link behance', image: botao1, link:'https://www.behance.net/luannadesigner1' ,last: false},
@@ -45,7 +46,7 @@ const Section2 = ()=>{
                         last={item.last}
                     />)}
             </div>
-                    <img className="section2_container_feedback_text" src={feedbacks} alt="feedbacks" />
+            <img className="section2_container_feedback_text" src={feedbacks} alt="feedbacks" />
             <div className="section_feedbacks">
                 <div className="section2_container_feedbacks">
                     <div className="section2_container_messages">
@@ -57,6 +58,7 @@ const Section2 = ()=>{
                 </div>
             </div>
             
+            <Footer/>
         </div>
     </>
     )
