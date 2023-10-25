@@ -1,0 +1,13 @@
+.footer{
+    margin-top: 16px;
+    background-color: #0B0E12;
+    width: 100%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_logo{
+    width: 80px;
+}

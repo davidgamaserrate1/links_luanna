@@ -1,7 +1,9 @@
 import BorderDivider from "./components/borderDivider";
+import Footer from "./components/footer";
 import Section1 from "./components/section1";
 import Section2 from "./components/section2";
 
+ 
  
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <Section1 />
       <BorderDivider />
       <Section2 />
+      <Footer />
     </div>
   );
 }
