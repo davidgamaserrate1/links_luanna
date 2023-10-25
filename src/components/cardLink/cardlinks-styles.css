@@ -1,0 +1,32 @@
+.card_link{
+    /* width: 300px; */
+     
+    display: flex;
+    align-items: center;
+    margin: 20px auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  auto; 
+
+    width: 100%;
+}
+.card_link_last{
+    display: flex;
+    align-items: center;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+
+    width: 100%;
+}
+
+.card_link_img{
+    mix-blend-mode: multiply;
+}
+
+@media screen {
+    
+}

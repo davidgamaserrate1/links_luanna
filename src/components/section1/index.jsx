@@ -21,6 +21,8 @@ import projeto9 from '../../assets/projects/projeto9.png'
 import projeto10 from '../../assets/projects/projeto10.png'
 import projeto11 from '../../assets/projects/projeto11.png'
 import projeto12 from '../../assets/projects/projeto12.png'
+import CardLink from "../cardLink";
+
 
 const images = [
     projeto1,
@@ -36,6 +38,10 @@ const images = [
     projeto11,
     projeto12
 ]
+
+
+
+
  
 
 
@@ -61,12 +67,7 @@ export default function Section1() {
             </div>
         </SlideFade>
         
-        <div className="section2_container">
-            <div className="section2_container_links">
-                <img className="section2_container_links" src="" alt="" />
-            </div>
-             
-        </div>
+       
 
         </>
     )
