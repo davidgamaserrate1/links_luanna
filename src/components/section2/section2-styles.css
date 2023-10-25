@@ -2,7 +2,7 @@
 
 .section2_container{
     position: relative;
-    height: calc(100vh - 150px);
+    height: 100%;
     background-color: white;
     position: relative;
     transition: ease-in-out 2ms;    
