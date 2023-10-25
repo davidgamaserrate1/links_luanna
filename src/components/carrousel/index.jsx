@@ -9,15 +9,17 @@ import 'swiper/css/effect-fade';
 
 import './carrousel-styles.css' 
  
-const Carousel2 = ({images}) => {
+const Carousel = ({ images, ...props }) => {
+  let widthVar = props.width || '200'
+
   return (
-    <div className="slider">
+    <div className="slider" style={{width: `${widthVar}px`}}  >
       <Swiper 
-        slidesPerView={3}
+        slidesPerView={props.slides}
         spaceBetween={8}
         centeredSlides={true}
         loop={true}
-        navigation={true}
+        navigation={false}
         modules={[Autoplay, Pagination, Navigation]}
         style={{color:'#fff',}}
         autoplay={{
@@ -27,7 +29,7 @@ const Carousel2 = ({images}) => {
       >
         {images.map((image, index)=>(
           <SwiperSlide key={index} >
-            <img src={image}  className="img" alt='Banner do projeto' />          
+            <img src={image.image}  className="img" alt={image.description}/>          
           </SwiperSlide>    
           ))
         }
@@ -36,4 +38,4 @@ const Carousel2 = ({images}) => {
   );
 };
 
-export default Carousel2;
+export default Carousel;

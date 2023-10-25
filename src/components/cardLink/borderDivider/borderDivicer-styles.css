@@ -1,0 +1,23 @@
+ .section2_container_top_frag {
+    width: 600%;
+    aspect-ratio: 400/397;
+    background: linear-gradient(0deg, #0B0E12, #0B0E12);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+   
+  }
+  
+
+  .section2_container_top {
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; background-color: white;
+  }
+  

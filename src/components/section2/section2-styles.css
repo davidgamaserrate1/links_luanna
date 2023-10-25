@@ -6,34 +6,32 @@
     width: 100%;
      
 }
-.section2_container_card{
-     
+
+.section2_container_links_images{
+    width: 60px;
+    margin: 0 auto -40px;
+    
 }
 
 .section2_container_cards{
     display: flex;
     padding: 50px;
     flex-wrap: wrap;
-    gap: 30px;
+   gap: 16px;
 } 
 
-.section2_container_links_images{
-    width: 200px;
-    height:150px;
-    margin: 0 auto;
-}
-
+/* section_feedbacks */
 .section_feedbacks{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+   
+   margin: 50px auto;
 }
 
 .section2_container_feedbacks{
-    margin-top: 50px;
+    
     justify-content: space-evenly;
     display: flex;
-    align-items: center;
+    
 }
 
 .section2_container_messages{
@@ -41,15 +39,10 @@
     flex-wrap: wrap;
 }
 .section2_container_feedback_text{
-     
-    height: 150px; 
-     
+    width: 50px; 
+    margin: 0 auto -40px;
 }
-
-.section2_container_feedback_text{
-    display: flex;
-
-}
+ 
 .section2_container_feedback_mesage{
     height: 100px;
 }

@@ -25,18 +25,18 @@ import CardLink from "../cardLink";
 
 
 const images = [
-    projeto1,
-    projeto2,
-    projeto3,
-    projeto4,
-    projeto5,
-    projeto6,
-    projeto7,
-    projeto8,
-    projeto9,
-    projeto10,
-    projeto11,
-    projeto12
+    {image: projeto1, description:'projeto1'},
+    {image: projeto2, description:'projeto2'},
+    {image: projeto3, description:'projeto3'},
+    {image: projeto4, description:'projeto4'},
+    {image: projeto5, description:'projeto5'},
+    {image: projeto6, description:'projeto6'},
+    {image: projeto7, description:'projeto7'},
+    {image: projeto8, description:'projeto8'},
+    {image: projeto9, description:'projeto9'},
+    {image: projeto10, description:'projeto10'},
+    {image: projeto11, description:'projeto11'},
+    {image: projeto12, description:'projeto12'},
 ]
 
 
@@ -63,7 +63,11 @@ export default function Section1() {
                 <img className="section1_container_projects__pic" src={projects_txt} alt="alguns projetos" />
             </div>
             <div className="section1_container_carrousel">
-                <Carousel lassName="section1_container_projects__carrousel" images={images}/>
+                <Carousel className="section1_container_projects__carrousel" 
+                    images={images}
+                    slides={3}
+                    width={350}
+                />
             </div>
         </SlideFade>
         

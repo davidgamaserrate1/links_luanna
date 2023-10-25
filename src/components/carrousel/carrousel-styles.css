@@ -1,7 +1,10 @@
 
 .slider{
-  color: #fff;
-  max-width: 350px;
- z-index: 9999;
+   
   
+  z-index: 9999;
+ 
+   
+   
+  margin: 10px auto;
 }
