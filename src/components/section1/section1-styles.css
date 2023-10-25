@@ -12,9 +12,9 @@
     min-height: 100vh;
     position: relative;
     transition: ease-in-out 2ms;
-    background-image: url('../../assets/FUNDO1.png');
     background-size: cover;
     padding: 0 50px 50px 50px;
+    height: 100vh;
     
   }
 
@@ -87,6 +87,43 @@
    flex-wrap: wrap;
    margin: 0 auto;
   }
+
+
+
+  .section2_container {
+    margin-top: -150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center; background-color: white;
+  }
+  
+ 
+  
+  .section2_container_links {
+    width: 600%;
+    aspect-ratio: 400/397;
+    background: linear-gradient(0deg, #0B0E12, #0B0E12);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+   
+  }
+  
+
+
+
+
+
+
+
+
+
   @media (min-width:560px) {
     section1_container {
      

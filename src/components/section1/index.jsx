@@ -63,8 +63,9 @@ export default function Section1() {
         
         <div className="section2_container">
             <div className="section2_container_links">
-                <img className="section2_container_links__image" src="" alt="" />
+                <img className="section2_container_links" src="" alt="" />
             </div>
+             
         </div>
 
         </>
