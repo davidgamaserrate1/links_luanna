@@ -86,12 +86,12 @@
    align-items: center;
    flex-wrap: wrap;
    margin: 0 auto;
+   margin-bottom: 10px;
   }
 
 
 
   .section2_container {
-    margin-top: -150px;
     height: 150px;
     position: relative;
     overflow: hidden;
