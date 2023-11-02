@@ -11,9 +11,9 @@ import print1 from '../../assets/section2/PRINT1.png'
 import print2 from '../../assets/section2/PRINT2.png'
 import print3 from '../../assets/section2/PRINT3.png'
 import print4 from '../../assets/section2/PRINT4.png'
-import BorderDivider from "../cardLink/borderDivider";
 import Carousel from "../carrousel/index.jsx";
 import Footer from "../footer";
+import Bg from "../bg/index.jsx";
 
 const linksBtn = [
     {description: 'link behance', image: botao1, link:'https://www.behance.net/luannadesigner1' ,last: false},
@@ -28,13 +28,11 @@ const feedbacksImgs =[
     {description: "print4", image:print4},
 ]
 
-// link behance 1: https://www.behance.net/luannadesigner1
-// link behance 2: https://www.behance.net/luannadesigner 
-// link orçamento: wa.me/5567981232612
+ 
 
 const Section2 = ()=>{
     return(
-    <>
+    <Bg>
         <div className="section2_container">
             <img className="section2_container_links_images" src={links} alt="imagem de links" />   
             <div className="section2_container_cards">
@@ -60,7 +58,8 @@ const Section2 = ()=>{
             
             <Footer/>
         </div>
-    </>
+    </Bg>
+   
     )
 }
 

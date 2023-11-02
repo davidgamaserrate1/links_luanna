@@ -8,10 +8,13 @@
 
 .section1_container {
   background-color: #0B0E12;
-  min-height: 100vh;
   position: relative;
   transition: ease-in-out 2ms;
-  padding: 0 50px 50px 50px;
+   
+}
+.tessst{
+  box-shadow: 0px 18px 18px -15px #111; 
+  
 }
 
 .section1_container__header{ 
@@ -78,7 +81,10 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  margin-bottom: 10px;
+  padding-bottom: 50px;
+
+   
+  box-shadow: 10px 18px 18px -15px #111; 
 }
 
   @media (min-width:560px) {

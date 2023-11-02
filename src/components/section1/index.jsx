@@ -21,7 +21,6 @@ import projeto9 from '../../assets/projects/projeto9.png'
 import projeto10 from '../../assets/projects/projeto10.png'
 import projeto11 from '../../assets/projects/projeto11.png'
 import projeto12 from '../../assets/projects/projeto12.png'
-import CardLink from "../cardLink";
 
 
 const images = [
@@ -47,7 +46,7 @@ const images = [
 
 export default function Section1() {
     return(
-        <>
+        <div className="tessst">
         <SlideFade in offsetY='50vh' className="section1_container" >    
             <img className="escrita" src={esc} alt="escrita" />        
             <div className="section1_container__header"> 
@@ -71,9 +70,10 @@ export default function Section1() {
             </div>
         </SlideFade>
         
+        
        
 
-        </>
+        </div>
     )
 }
 

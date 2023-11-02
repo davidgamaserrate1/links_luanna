@@ -1,46 +1,41 @@
+ 
 
-
-.section2_container{
+.section2_container{    
     position: relative;
     height: 100%;
-    background-color: white;
     position: relative;
     transition: ease-in-out 2ms;    
     width: 100%;
- 
-    background-color: #fafafa;
- 
-    background-image:  radial-gradient(#ff2ea6 2px, transparent 2px), radial-gradient(#ff2ea6 2px, #fafafa 2px);
     background-size: 80px 80px;
     background-position: 0 0,40px 40px;
     z-index: 99999;
+    padding-top: 50px;
+    margin-top: 10px;
 }
-
+ 
 .section2_container_links_images{
     width: 60px;
-    margin: 0 auto -40px;
-    
+    margin: 0 auto -40px;    
 }
 
 .section2_container_cards{
     display: flex;
     padding: 50px;
     flex-wrap: wrap;
-   gap: 16px;
+    gap: 16px;
+    z-index: 99999;
 } 
 
-/* section_feedbacks */
 .section_feedbacks{
    
-   
+   z-index: 999999999999999999;
+    
    margin: 50px auto 0;
 }
 
-.section2_container_feedbacks{
-    
+.section2_container_feedbacks{    
     justify-content: space-evenly;
     display: flex;
-    
 }
 
 .section2_container_messages{
